@@ -57,10 +57,10 @@
 #define ORDA_ZOMBIE_SUMMON_IMPACT_FX			"REX/ai/orda/spawn_impact"
 #define ORDA_ZOMBIE_CRUSH_ENABLED			false
 #define ORDA_ZOMBIE_CRUSH_DIST				150
-#define ORDA_ZOMBIE_SUMMON_MIN				12
-#define ORDA_ZOMBIE_SUMMON_MAX 				24
-#define ORDA_ZOMBIE_SUMMON_COOLDOWN_MIN			10
-#define ORDA_ZOMBIE_SUMMON_COOLDOWN_MAX			20
+#define ORDA_ZOMBIE_SUMMON_MIN				12 // 4
+#define ORDA_ZOMBIE_SUMMON_MAX 				24 // 8
+#define ORDA_ZOMBIE_SUMMON_COOLDOWN_MIN			10 // 20
+#define ORDA_ZOMBIE_SUMMON_COOLDOWN_MAX			20 // 35
 #define ORDA_ZOMBIE_SWIPE_DIST_MIN			50
 #define ORDA_ZOMBIE_SWIPE_DIST_MAX			100
 #define ORDA_ZOMBIE_HEALTH_INCREMENT			1.5
@@ -189,13 +189,13 @@ function __init__()
 	for( i = 0; i < players.size; i++ )
 		players[ i ] clientfield::set_player_uimodel( "hudItems.CWBossHealthBar", 0 );
 
-	BT_REGISTER_API( "OrdaLocomotionBehaviorCondition",			&OrdaLocomotionBehaviorCondition );
-	BT_REGISTER_API( "OrdaShouldSummonDog",					&OrdaShouldSummonDog );
-	BT_REGISTER_API( "OrdaTargetService",					&OrdaTargetService );
-	BT_REGISTER_API( "OrdaSpawnService",					&OrdaSpawnService );
-	BT_REGISTER_API( "OrdaShouldAttack",					&OrdaShouldAttack );
-	BT_REGISTER_API( "OrdaShouldRoar",					&OrdaShouldRoar );
-	BT_REGISTER_API( "OrdaShouldHeal",					&OrdaShouldHeal );
+	BT_REGISTER_API( "OrdaLocomotionBehaviorCondition",		&OrdaLocomotionBehaviorCondition );
+	BT_REGISTER_API( "OrdaShouldSummonDog",				&OrdaShouldSummonDog );
+	BT_REGISTER_API( "OrdaTargetService",				&OrdaTargetService );
+	BT_REGISTER_API( "OrdaSpawnService",				&OrdaSpawnService );
+	BT_REGISTER_API( "OrdaShouldAttack",				&OrdaShouldAttack );
+	BT_REGISTER_API( "OrdaShouldRoar",				&OrdaShouldRoar );
+	BT_REGISTER_API( "OrdaShouldHeal",				&OrdaShouldHeal );
 
 	spawner::add_archetype_spawn_function( ARCHETYPE_ORDA, &OrdaInit );
 
@@ -560,26 +560,26 @@ function HandleRoaming()
 
         if( !isdefined( self.favoriteenemy ) )
         {
-		queryResult = PositionQuery_Source_Navigation( ( self.origin + vectorscale( AnglesToForward( self.angles ), 250 ) ), 750, 1250, 250, 50, self );
-		roam_loc = array::random( queryResult.data );
-		if( !self CanPath( self.origin, roam_loc.origin ) ) 
-			continue;
+			queryResult = PositionQuery_Source_Navigation( ( self.origin + vectorscale( AnglesToForward( self.angles ), 250 ) ), 750, 1250, 250, 50, self );
+			roam_loc = array::random( queryResult.data );
+			if( !self CanPath( self.origin, roam_loc.origin ) ) 
+				continue;
 
-		a_players = self GetAlivePlayers();
-		if( !IS_EQUAL( a_players, 0 ) )
-			for( i = 0; i < a_players.size; i++ )
-				if( DistanceSquared( a_players[ i ].origin, self.origin ) <= SQUARED( ORDA_TARGET_DISTANCE ) )
-					continue;
+			a_players = self GetAlivePlayers();
+			if( !IS_EQUAL( a_players, 0 ) )
+				for( i = 0; i < a_players.size; i++ )
+					if( DistanceSquared( a_players[ i ].origin, self.origin ) <= SQUARED( ORDA_TARGET_DISTANCE ) )
+						continue;
 
-		self.v_zombie_custom_goal = roam_loc.origin;
-            	self.is_roaming = true;
+			self.v_zombie_custom_goal = roam_loc.origin;
+            self.is_roaming = true;
 
-            	self util::waittill_any( "roam_done", "roam_interrupted" );
+            self util::waittill_any( "roam_done", "roam_interrupted" );
 
-           	self.v_zombie_custom_goal = undefined;
-		self.is_roaming = false;
+            self.v_zombie_custom_goal = undefined;
+			self.is_roaming = false;
 
-		wait( RandomFloatRange( 1.5, 4.5 ) );
+			wait( RandomFloatRange( 1.5, 4.5 ) );
         }
     }
 }
@@ -590,16 +590,16 @@ function WatchRoaming()
 
     while( 1 )
     {
-	WAIT_SERVER_FRAME;
+		WAIT_SERVER_FRAME;
 
-	if( self.is_roaming )
-	{
-	    if( Distance( self.origin, self.v_zombie_custom_goal ) < 75 )
-	    {
-			IPrintLnBold( ( ( level.ai_debug ) ? "GOAL REACHED" : undefined ) );
-			self notify( "roam_done" );
-	    }
-	}
+        if( self.is_roaming )
+        {
+            if( Distance( self.origin, self.v_zombie_custom_goal ) < 75 )
+            {
+				IPrintLnBold( ( ( level.ai_debug ) ? "GOAL REACHED" : undefined ) );
+				self notify( "roam_done" );
+            }
+        }
     }
 }
 
@@ -611,11 +611,11 @@ function CheckIsAttacking()
 	{
 		WAIT_SERVER_FRAME;
 
-	if( self.can_attack )
-	{
-	    self util::waittill_any( "swipe_done", "stomp_done", "slam_done" );
+        if( self.can_attack )
+        {
+            self util::waittill_any( "swipe_done", "stomp_done", "slam_done" );
 
-	    self flag::clear( "orda_is_attacking" );
+            self flag::clear( "orda_is_attacking" );
 
 			IPrintLnBold( ( ( level.ai_debug ) ? "ATTACK DONE!" : undefined ) );
 
