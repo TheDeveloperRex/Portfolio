@@ -402,7 +402,7 @@ function WeakpointWatchDamage( entity )
 
 	self SetCanDamage( 1 );
 
-	while( 1 )
+	for( ;; )
 	{
 		self waittill( "damage", damage, attacker, dir, point, mod, model, tag, part, weapon, flags, inflictor, chargeLevel );
 		
@@ -551,71 +551,71 @@ function HandleRoaming()
 	
 	self thread WatchRoaming();
 
-    while( 1 )
+    for( ;; )
     {
         WAIT_SERVER_FRAME;
         
-		while( self.is_spawning || self.is_healing || self flag::get( "orda_is_healing" ) )
-			WAIT_SERVER_FRAME;
+	while( self.is_spawning || self.is_healing || self flag::get( "orda_is_healing" ) )
+		WAIT_SERVER_FRAME;
 
         if( !isdefined( self.favoriteenemy ) )
         {
-			queryResult = PositionQuery_Source_Navigation( ( self.origin + vectorscale( AnglesToForward( self.angles ), 250 ) ), 750, 1250, 250, 50, self );
-			roam_loc = array::random( queryResult.data );
-			if( !self CanPath( self.origin, roam_loc.origin ) ) 
-				continue;
+		queryResult = PositionQuery_Source_Navigation( ( self.origin + vectorscale( AnglesToForward( self.angles ), 250 ) ), 750, 1250, 250, 50, self );
+		roam_loc = array::random( queryResult.data );
+		if( !self CanPath( self.origin, roam_loc.origin ) ) 
+			continue;
 
-			a_players = self GetAlivePlayers();
-			if( !IS_EQUAL( a_players, 0 ) )
-				for( i = 0; i < a_players.size; i++ )
-					if( DistanceSquared( a_players[ i ].origin, self.origin ) <= SQUARED( ORDA_TARGET_DISTANCE ) )
-						continue;
+		a_players = self GetAlivePlayers();
+		if( !IS_EQUAL( a_players, 0 ) )
+			for( i = 0; i < a_players.size; i++ )
+				if( DistanceSquared( a_players[ i ].origin, self.origin ) <= SQUARED( ORDA_TARGET_DISTANCE ) )
+					continue;
 
-			self.v_zombie_custom_goal = roam_loc.origin;
-            self.is_roaming = true;
+		self.v_zombie_custom_goal = roam_loc.origin;
+           	self.is_roaming = true;
 
-            self util::waittill_any( "roam_done", "roam_interrupted" );
+           	self util::waittill_any( "roam_done", "roam_interrupted" );
 
-            self.v_zombie_custom_goal = undefined;
-			self.is_roaming = false;
+           	self.v_zombie_custom_goal = undefined;
+		self.is_roaming = false;
 
-			wait( RandomFloatRange( 1.5, 4.5 ) );
+		wait( RandomFloatRange( 1.5, 4.5 ) );
         }
     }
 }
 
 function WatchRoaming()
 {
-    self endon( "death" );
+self endon( "death" );
 
-    while( 1 )
-    {
-		WAIT_SERVER_FRAME;
+for( ;; )
+{
+	WAIT_SERVER_FRAME;
 
-        if( self.is_roaming )
-        {
-            if( Distance( self.origin, self.v_zombie_custom_goal ) < 75 )
-            {
-				IPrintLnBold( ( ( level.ai_debug ) ? "GOAL REACHED" : undefined ) );
-				self notify( "roam_done" );
-            }
-        }
-    }
+	if( self.is_roaming )
+	{
+		if( Distance( self.origin, self.v_zombie_custom_goal ) < 75 )
+		{
+			IPrintLnBold( ( ( level.ai_debug ) ? "GOAL REACHED" : undefined ) );
+			self notify( "roam_done" );
+		}
+	}
+}
 }
 
 function CheckIsAttacking()
 {
 	self endon( "death" );
 
-	while( 1 )
+	for( ;; )
 	{
 		WAIT_SERVER_FRAME;
 
-        if( self.can_attack )
-        {
-            self util::waittill_any( "swipe_done", "stomp_done", "slam_done" );
+		if( self.can_attack )
+		{
+			self util::waittill_any( "swipe_done", "stomp_done", "slam_done" );
 
-            self flag::clear( "orda_is_attacking" );
+			self flag::clear( "orda_is_attacking" );
 
 			IPrintLnBold( ( ( level.ai_debug ) ? "ATTACK DONE!" : undefined ) );
 
@@ -624,7 +624,7 @@ function CheckIsAttacking()
 			self.attack_cooling_down = false;
 
 			level.orda_attack_distance = RandomIntRange( ORDA_ATTACK_DISTANCE_MIN, ORDA_ATTACK_DISTANCE_MAX + 1 );
-        }
+		}
 	}
 }
 
@@ -648,7 +648,7 @@ function OrdaShouldAttack( entity )
 		return false;
 	}
 	if( !isdefined( entity.favoriteenemy ) )
-    {
+    	{
 		entity.can_attack = false;
 		return false;
 	}
@@ -719,7 +719,7 @@ function HandleSpecialEvents()
 {
 	self endon( "death" );
 
-	while( 1 )
+	for( ;; )
 	{
 		while( isdefined( self.current_special ) )
 			WAIT_SERVER_FRAME;
@@ -734,7 +734,7 @@ function HandleSummonDog()
 {
 	self endon( "death" );
 
-	while( 1 )
+	for( ;; )
 	{
 		WAIT_SERVER_FRAME;
 
@@ -870,8 +870,8 @@ function DogCheckMovement()
 {
 	self endon( "death" );
 
-    prevorigin = self.origin;
-	while( 1 )
+    	prevorigin = self.origin;
+	for( ;; )
 	{
 		wait( 0.15 );
 
@@ -936,7 +936,7 @@ function HandleSummonZombie()
 {
 	self endon( "death" );
 
-	while( 1 )
+	for( ;; )
 	{
 		WAIT_SERVER_FRAME;
 
@@ -1051,7 +1051,7 @@ function HandleRoar()
 {
 	self endon( "death" );
 
-	while( 1 )
+	for( ;; )
 	{
 		WAIT_SERVER_FRAME;
 
@@ -1148,7 +1148,7 @@ function HandleKnockback()
 {
 	self endon( "death" );
 
-	while( 1 )
+	for( ;; )
 	{
 		self util::waittill_any( "orda_slam", "orda_stomp" );
 
@@ -1181,7 +1181,7 @@ function HandlePlayerDamage()
 
 	self thread WatchPlayerDamage();
 
-	while( 1 )
+	for( ;; )
 	{
 		self waittill( "swipe_start" );
 
@@ -1197,7 +1197,7 @@ function WatchPlayerDamage()
 {
 	self endon( "death" );
 
-	while( 1 )
+	for( ;; )
 	{
 		WAIT_SERVER_FRAME;
 
@@ -1226,7 +1226,7 @@ function HandleStepRumble()
 {
 	self endon( "death" );
 
-	while( 1 )
+	for( ;; )
 	{
 		self waittill( "orda_step", tag );
 
@@ -1245,7 +1245,7 @@ function HandleZombieCrush()
 {
 	self endon( "death" );
 
-	while( 1 )
+	for( ;; )
 	{
 		WAIT_SERVER_FRAME;
 
@@ -1268,7 +1268,7 @@ function HandleZombieCrush()
 
 function CheckHealFlags()
 {
-	while( 1 )
+	for( ;; )
 	{
 		WAIT_SERVER_FRAME;
 
@@ -1298,7 +1298,7 @@ function HandleHeal()
 
 	self thread WatchHeal();
 	
-	while( 1 )
+	for( ;; )
 	{
 		WAIT_SERVER_FRAME;
 
@@ -1317,7 +1317,7 @@ function WatchHeal()
 {
 	self endon( "death" );
 
-	while( 1 )
+	for( ;; )
 	{
 		WAIT_SERVER_FRAME;
 		
@@ -1468,8 +1468,8 @@ function WaspWatchOrdaDeath( entity )
 	self StopLoopSound( RandomFloatRange( 1.5, 2 ) );
 
 	self CancelAIMove();
-    self ClearVehGoalPos();
-    self ClearLookAtEnt();
+    	self ClearVehGoalPos();
+    	self ClearLookAtEnt();
 	self.fx Delete();
 	self Delete();
 }
@@ -1481,7 +1481,7 @@ function WaspHandleLocomotion( entity )
 	self thread WaspHandleRoam( entity );
 	self thread WaspHandleRevolve( entity );
 	
-	while( 1 )
+	for( ;; )
 	{
 		WAIT_SERVER_FRAME;
 
@@ -1526,7 +1526,7 @@ function WaspHandleRevolve( entity )
 
 	self thread WaspWatchRevolve( entity );
 
-	while( 1 )
+	for( ;; )
 	{
 		WAIT_SERVER_FRAME;
 
@@ -1548,7 +1548,7 @@ function WaspWatchRevolve( entity )
 	self endon( "death" );
 	self.revolve_time = 0;
 	self.v_dist = 60;
-	while( 1 )
+	for( ;; )
 	{	
 		WAIT_SERVER_FRAME;
 		
@@ -1582,7 +1582,7 @@ function WaspHandleDamage( entity )
 
 	next_hit = GetTime();
 
-	while( 1 )
+	for( ;; )
 	{
 		WAIT_SERVER_FRAME;
 
@@ -1618,7 +1618,7 @@ function WaspHandleRoam( entity )
 {
 	self endon( "death" );
 
-	while( 1 )
+	for( ;; )
 	{
 		self waittill( "near_goal" );
 
