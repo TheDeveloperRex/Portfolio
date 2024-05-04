@@ -54,7 +54,7 @@
 #insert scripts\shared\aat_zm.gsh;
 
 #define ORDA_ZOMBIE_SUMMON_TRAIL_FX			"REX/ai/orda/spawn_trail"
-#define ORDA_ZOMBIE_SUMMON_IMPACT_FX		"REX/ai/orda/spawn_impact"
+#define ORDA_ZOMBIE_SUMMON_IMPACT_FX			"REX/ai/orda/spawn_impact"
 #define ORDA_ZOMBIE_CRUSH_ENABLED			false
 #define ORDA_ZOMBIE_CRUSH_DIST				150
 #define ORDA_ZOMBIE_SUMMON_MIN				12
@@ -78,7 +78,7 @@
 #define ORDA_DISINTEGRATION_LENGTH			6
 #define ORDA_GROWL_INTERVAL_MIN 			10
 #define ORDA_GROWL_INTERVAL_MAX 			20
-#define ORDA_ATTACK_DISTANCE_INITIAL		300
+#define ORDA_ATTACK_DISTANCE_INITIAL			300
 #define ORDA_ATTACK_DISTANCE_MIN			300
 #define ORDA_ATTACK_DISTANCE_MAX			400
 #define ORDA_ATTACK_COOLDOWN_MIN			1
@@ -86,64 +86,64 @@
 #define ORDA_INFLICTOR_INTERVAL_MIN			8
 #define ORDA_INFLICTOR_INTERVAL_MAX			16
 #define ORDA_SPECIAL_COOLDOWN_MIN			10
-#define ORDA_SPECIAL_COOLDOWN_MAX   		20
+#define ORDA_SPECIAL_COOLDOWN_MAX   			20
 #define ORDA_KNOCKBACK_DAMAGE				250
 #define ORDA_KNOCKBACK_STRENGTH				950
-#define ORDA_KNOCKBACK_LERP					7.5
+#define ORDA_KNOCKBACK_LERP				7.5
 #define ORDA_TARGET_DISTANCE				2000 // 1800
-#define ORDA_RUMBLE_RADIUS					1000
-#define ORDA_RUMBLE_LENGTH					0.35
+#define ORDA_RUMBLE_RADIUS				1000
+#define ORDA_RUMBLE_LENGTH				0.35
 #define ORDA_KNOCKBACK_RANGE				1000
-#define ORDA_ATTACK_DAMAGE					75
-#define ORDA_HEAL_HEALTH_REQUIREMENT		0.85 // reqhealth / maxhealth
-#define ORDA_HEAL_COUNTER_REQUIREMENT		17500
-#define ORDA_HEAL_INCREMENT					7500
+#define ORDA_ATTACK_DAMAGE				75
+#define ORDA_HEAL_HEALTH_REQUIREMENT			0.85 // reqhealth / maxhealth
+#define ORDA_HEAL_COUNTER_REQUIREMENT			17500
+#define ORDA_HEAL_INCREMENT				7500
 #define ORDA_HEALTH_BAR_RADIUS				2500 // 1850
-#define ORDA_HEALTH 						350000 // 500000-750000
-#define ORDA_NAME							"ORDA SOPRANO"
+#define ORDA_HEALTH 					350000 // 500000-750000
+#define ORDA_NAME					"ORDA"
 
-#define WASP_ATTACK_FX						"REX/ai/orda/wasp_attack"
-#define WASP_TRAIL_FX						"REX/ai/orda/wasp_trail"
-#define WASP_DEATH_FX						"REX/ai/orda/wasp_death"
-#define WASP_MODEL							"rex_ai_orda_wasp"
+#define WASP_ATTACK_FX					"REX/ai/orda/wasp_attack"
+#define WASP_TRAIL_FX					"REX/ai/orda/wasp_trail"
+#define WASP_DEATH_FX					"REX/ai/orda/wasp_death"
+#define WASP_MODEL					"rex_ai_orda_wasp"
 #define WASP_NEARGOAL_NOTIFY				30
 #define WASP_ROAM_LENGTH_MIN				10
 #define WASP_ROAM_LENGTH_MAX				20
-#define WASP_ROAM_DISTANCE					1550
-#define WASP_ATTACK_DAMAGE					10
-#define WASP_ATTACK_LENGTH					1.5
-#define WASP_SPAWN_TIME						2.25
-#define WASP_SPAWN_VELOCITY					15
-#define WASP_SPAWN_COOLDOWN					1
-#define WASP_HEALTH							350
+#define WASP_ROAM_DISTANCE				1550
+#define WASP_ATTACK_DAMAGE				10
+#define WASP_ATTACK_LENGTH				1.5
+#define WASP_SPAWN_TIME					2.25
+#define WASP_SPAWN_VELOCITY				15
+#define WASP_SPAWN_COOLDOWN				1
+#define WASP_HEALTH					350
 #define WASP_SPAWN_INCREMENT				4
-#define WASP_SPAWN_MAX						6
+#define WASP_SPAWN_MAX					6
 
-#define HELLHOUND_IMPACT_FX					"REX/ai/orda/hellhound_impact"
-#define HELLHOUND_TRAIL_FX					"REX/ai/orda/hellhound_body"
-#define HELLHOUND_FIRE_FX					"REX/ai/orda/hellhound_fire"
-#define HELLHOUND_HEALTH					500
-#define HELLHOUND_SPAWN_MIN					7
-#define HELLHOUND_SPAWN_MAX					10
+#define HELLHOUND_IMPACT_FX				"REX/ai/orda/hellhound_impact"
+#define HELLHOUND_TRAIL_FX				"REX/ai/orda/hellhound_body"
+#define HELLHOUND_FIRE_FX				"REX/ai/orda/hellhound_fire"
+#define HELLHOUND_HEALTH				500
+#define HELLHOUND_SPAWN_MIN				7
+#define HELLHOUND_SPAWN_MAX				10
 #define HELLHOUND_ATTACK_DAMAGE				5
-#define HELLHOUND_DAMAGE_INCREMENT_MIN		4
-#define HELLHOUND_DAMAGE_INCREMENT_MAX		9
+#define HELLHOUND_DAMAGE_INCREMENT_MIN			4
+#define HELLHOUND_DAMAGE_INCREMENT_MAX			9
 #define HELLHOUND_FIRE_LIFETIME_MIN			3
-#define HELLHOUND_FIRE_LIFETIME_MAX 		6
+#define HELLHOUND_FIRE_LIFETIME_MAX 			6
 #define HELLHOUND_HIT_RADIUS_MIN			25
 #define HELLHOUND_HIT_RADIUS_MAX			175
 #define HELLHOUND_FIRE_RADIUS				128
 
-#define HELLHOUND_VEHICLE					"spawner_rex_orda_hellhound"
-#define WASP_VEHICLE						"spawner_rex_orda_wasp"
+#define HELLHOUND_VEHICLE				"spawner_rex_orda_hellhound"
+#define WASP_VEHICLE					"spawner_rex_orda_wasp"
 #define ARCHETYPE_ORDA_HELLHOUND 			"rex_orda_hellhound"
 #define ARCHETYPE_ORDA_WASP 				"rex_orda_wasp"
-#define ARCHETYPE_ORDA 						"rex_orda"
+#define ARCHETYPE_ORDA 					"rex_orda"
 
-#define SQUARED(x)							( x * x )
+#define SQUARED(x)					( x * x )
 
-#precache( "vehicle", 	HELLHOUND_VEHICLE );
-#precache( "vehicle", 	WASP_VEHICLE );
+#precache( "vehicle", 		HELLHOUND_VEHICLE );
+#precache( "vehicle", 		WASP_VEHICLE );
 #precache( "fx", 		WASP_ATTACK_FX );
 #precache( "fx",		WASP_TRAIL_FX );
 #precache( "fx",		WASP_DEATH_FX );
@@ -155,11 +155,11 @@
 #precache( "fx", 		ORDA_HEAL_ARM_FX );
 #precache( "fx", 		ORDA_SPAWN_FX );
 #precache( "fx", 		ORDA_IMPACT_FX );
-#precache( "xmodel", 	ORDA_WP_UPPER );
-#precache( "xmodel",	ORDA_WP_TORSO );
-#precache( "xmodel", 	ORDA_WP_LOWER_L );
-#precache( "xmodel", 	ORDA_WP_LOWER_R );
-#precache( "xmodel",	WASP_MODEL );
+#precache( "xmodel", 		ORDA_WP_UPPER );
+#precache( "xmodel",		ORDA_WP_TORSO );
+#precache( "xmodel", 		ORDA_WP_LOWER_L );
+#precache( "xmodel", 		ORDA_WP_LOWER_R );
+#precache( "xmodel",		WASP_MODEL );
 
 #using_animtree( "generic" );
 
