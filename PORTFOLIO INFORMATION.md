@@ -12,11 +12,17 @@
 
 [![ORDA BOSS AI](https://github.com/TheDeveloperRex/Portfolio/assets/101901578/3a8e0400-815e-4fe1-b1c1-629d3a04e35a)](https://www.youtube.com/watch?v=EVeXBQBfBUQ&t=75s&ab_channel=REX)
 
-
 Used in many areas of the main project as a final enemy boss that must defeated to be rewarded greatly. It can be encountered it games such as Call of Duty: Black Ops Cold War.
   * This AI is programmed using the GSC/CSC programming language.
   * Utilized 3D space directional vectors, advanced trigonometry and calculus.
   * Utilized data structures to store data in sub-variables on the AI to access certain attributes across multiple functions without the unnecessary reassignments.
   * Utilized advanced trigonometry, calculus, 3D directional vector math to handle displacement, complex angular rotations and movement.
   * Utilized Treyarch AI systems to allow the AI to perform specialized events and actions within the Call of Duty Zombies mode.
-    
+
+<hr />
+
+### COLD WAR HUD & GAMEPLAY SYSTEMS
+
+[![COLD WAR HUD & GAMEPLAY SYSTEMS](https://github.com/TheDeveloperRex/Portfolio/assets/101901578/aee1c197-5352-4d27-823d-84fd961bc72e)](https://www.youtube.com/watch?v=sSCjfv1OhbA&t=153s&ab_channel=REX)
+
+Used in the Zombies mode of the main project as the main gameplay systems and user interface that give the game functionality, bringing a unique and interesting aspect to the players experience. It can be found in games such as Call of Duty: Black Ops Cold War.
