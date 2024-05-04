@@ -14,7 +14,7 @@
 ### ORDA BOSS AI
 
 [![ORDA BOSS AI](https://github.com/TheDeveloperRex/Portfolio/assets/101901578/3a8e0400-815e-4fe1-b1c1-629d3a04e35a)](https://www.youtube.com/watch?v=EVeXBQBfBUQ&t=75s&ab_channel=REX)
-Used in many areas of the main project as a final enemy boss can be defeated to be rewarded greatly. It can be encountered in games such as Call of Duty: Black Ops Cold War.
+Used in many areas of the main project as a final enemy boss can be defeated to be rewarded greatly. It can be encountered in games such as Call of Duty: Black Ops Cold War and Call of Duty: Black Ops III.
 * This AI is programmed using the GSC/CSC and LUA programming languages.
 * Utilized 3D space directional vectors, advanced trigonometry and calculus.
 * Utilized data structures to store data in sub-variables on the AI to access certain attributes across multiple functions without the unnecessary reassignments.
@@ -26,7 +26,7 @@ Used in many areas of the main project as a final enemy boss can be defeated to 
 ### STURMKRIEGER MINI-BOSS AI
 
 [![STURMKRIEGER AI](https://github.com/TheDeveloperRex/Portfolio/assets/101901578/b026ca2a-808c-4ae8-9a92-08e029718efd)](https://www.youtube.com/watch?v=b36_MzzxRuw&ab_channel=REX)
-Used in many areas of the main project as a mini-boss that fires back at the target enemy. It can be encountered in games such as Call of Duty: Vanguard.
+Used in many areas of the main project as a mini-boss that fires back at the target enemy. It can be encountered in games such as Call of Duty: Vanguard and Call of Duty: Black Ops III.
 * Utilized 3D space directional vectors, advanced trigonometry and calculus.
 * Utilized data structures to store data in sub-variables on the AI to access certain attributes across multiple functions without the unnecessary reassignments.
 * Utilized advanced trigonometry, calculus, 3D directional vector math to handle displacement, complex angular rotations and movement.
