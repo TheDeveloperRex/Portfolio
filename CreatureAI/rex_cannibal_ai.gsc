@@ -68,9 +68,9 @@
 
 #define CANNIBAL_DOOR_DESTROY_FX                "REX/ai/cannibal/door_destroy"
 
-#define CANNIBAL_HEALTH 						10000
+#define CANNIBAL_HEALTH 			10000
 
-#define ARCHETYPE_CANNIBAL 					    "rex_cannibal"
+#define ARCHETYPE_CANNIBAL 			"rex_cannibal"
 
 #define SQUARED(x)                              ( x * x )
 
