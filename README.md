@@ -1,7 +1,10 @@
 # PROJECT INFORMATION
 
 ## WHAT IS GSC?
-- In Call of Duty, "GSC" stands for "Game Script Code." GSC is a scripting language used in the Call of Duty series to program and control various aspects of gameplay, such as game mechanics, events, AI behavior, and more. It allows developers to create game modes, maps, and gameplay elements for the game. These scripts contain commands, functions, and variables that define how different elements of the game behave. Scripters can manipulate player movement, weapon behavior, game objectives, and other aspects of gameplay using GSC.
+- In Call of Duty, "GSC" stands for "Game Script Code." GSC is a scripting language, derived from languages such as C++ and C#, used in the Call of Duty series to program and control various aspects of gameplay, such as game mechanics, events, AI behavior, and more. It allows developers to create game modes, maps, and gameplay elements for the game. These scripts contain commands, functions, and variables that define how different elements of the game behave. Scripters can manipulate player movement, weapon behavior, game objectives, and other aspects of gameplay using GSC.
+
+## WHAT IS LUA?
+- Lua is frequently employed to allow developers to customize and extend the game's UI. Game engines and frameworks may provide Lua scripting support specifically tailored for UI development, enabling designers and programmers to create interactive menus, HUDs (Heads-Up Displays), in-game notifications, and other UI elements.
 
 <hr />
 
