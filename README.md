@@ -1,5 +1,8 @@
 # PROJECT INFORMATION
 
+## PREVIEW IMAGES
+- Every image provided has a redirection link, once clicked, will send you to a page where you can preview my work or in other cases, be able to test it out!
+
 ## WHAT IS GSC?
 - In Call of Duty, "GSC" stands for "Game Script Code." GSC is a scripting language, derived from languages such as C++ and C#, used in the Call of Duty series to program and control various aspects of gameplay, such as game mechanics, events, AI behavior, and more. It allows developers to create game modes, maps, and gameplay elements for the game. These scripts contain commands, functions, and variables that define how different elements of the game behave. Scripters can manipulate player movement, weapon behavior, game objectives, and other aspects of gameplay using GSC.
 
@@ -32,6 +35,17 @@ Used in many areas of the main project as a mini boss that fires back at the tar
 
 <hr />
 
+### ICE GRENADE BOSS AI
+[![ICE GRENADE BOSS AI](https://github.com/TheDeveloperRex/Portfolio/assets/101901578/88d5c024-bee5-47db-8496-72513f78297a)](https://www.youtube.com/watch?v=P3NmgXKwjWk&t=10s&ab_channel=REX)
+Used in a commissioned project as a final enemy boss that performs many different attacks against the target enemy. It can be encountered in games such as Call of Duty: Black Ops III.
+* Utilized 3D space directional vectors, advanced trigonometry and calculus.
+* Utilized data structures to store data in sub-variables on the AI to access certain attributes across multiple functions without the unnecessary reassignments.
+* Utilized advanced trigonometry, calculus, 3D directional vector math to handle displacement, complex angular rotations and movement.
+* Utilized Treyarch AI systems to allow the AI to perform specialized events and actions within the Call of Duty Zombies mode.
+
+
+<hr />
+
 ### COLD WAR HUD & GAMEPLAY SYSTEMS
 
 [![COLD WAR HUD & GAMEPLAY SYSTEMS](https://github.com/TheDeveloperRex/Portfolio/assets/101901578/aee1c197-5352-4d27-823d-84fd961bc72e)](https://www.youtube.com/watch?v=sSCjfv1OhbA&t=153s&ab_channel=REX)
@@ -46,8 +60,7 @@ Used in the Zombies mode of the main project as the main gameplay systems and us
 
 ### DIGESTION GAME
 
-![image](https://github.com/TheDeveloperRex/Portfolio/assets/101901578/75b72564-9705-4bee-9acc-0560124f8fc5)
-
+[![DIGESTION GAME](https://github.com/TheDeveloperRex/Portfolio/assets/101901578/75b72564-9705-4bee-9acc-0560124f8fc5)](https://drive.google.com/file/d/104bZIyGLbMOQAVA3-UZZbHcbRcKTtkty/view?usp=sharing)
 
 This game was developed as the final project of my Anatomy course, achieving a final grade of 200%. In recognition of its exceptional quality and innovative approach, my instructor remarked that I exceeded expectations, demonstrating a level of dedication and creativity that stood out in the class. Upon completion, my instructor expressed admiration for the uniqueness of the project, citing it as an exemplary work that future students can aspire to.
 * This game application was programmed using Python and other interface libraries and completed within 4-5 days with 750+ lines of code.
