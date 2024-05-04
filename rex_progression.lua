@@ -9,8 +9,8 @@ EnableGlobals()
 function UpdateFileData( self, controller, do_prestige )
     local data = nil
 
-    if not FileExists( "players\\cumuniverse-data.json" ) then
-        data = io.open( "players\\cumuniverse-data.json", "w" )
+    if not FileExists( "players\\cu-data.json" ) then
+        data = io.open( "players\\cu-data.json", "w" )
         ProgressionDataTable[ Engine.GetXUID( controller ) ] = GetDefaultData()
     else
         local val = Engine.GetModelValue( Engine.GetModel( Engine.GetModelForController( controller ), "hudItems.ProgressionData" ) )
@@ -18,7 +18,7 @@ function UpdateFileData( self, controller, do_prestige )
         local levelData = LUI.splitString( strToks[ 1 ], "," )
         local weaponData = LUI.splitString( strToks[ 2 ], "," )
 
-        data = io.open( "players\\cumuniverse-data.json", "w" )
+        data = io.open( "players\\cu-data.json", "w" )
         
         local defaultData = GetDefaultData()
         local userData = ProgressionDataTable[ Engine.GetXUID( controller ) ]
@@ -88,11 +88,11 @@ function UpdateFileData( self, controller, do_prestige )
 end
 
 function RetrieveFileData( self, controller )
-    if not FileExists( "players\\cumuniverse-data.json" ) then
+    if not FileExists( "players\\cu-data.json" ) then
         UpdateFileData( self, controller, false )
     end
     
-    local data = io.open( "players\\cumuniverse-data.json", "r" )
+    local data = io.open( "players\\cu-data.json", "r" )
     
     if data then
         ProgressionDataTable[ Engine.GetXUID( controller ) ] = json.decode( data:read() )
