@@ -86,18 +86,18 @@ function __init__()
 {
 	level.cannibal_spawner = GetEntArray( "cannibal_spawner", "script_noteworthy" );
 
-	BT_REGISTER_API( "CannibalLocomotionBehaviorCondition",		&CannibalLocomotionBehaviorCondition );
+	BT_REGISTER_API( "CannibalLocomotionBehaviorCondition",				&CannibalLocomotionBehaviorCondition );
 	BT_REGISTER_API( "CannibalTargetService",					&CannibalTargetService );
 	BT_REGISTER_API( "CannibalShouldAttack",					&CannibalShouldAttack );
-	BT_REGISTER_API( "CannibalShouldShove",					    &CannibalShouldShove );
-    BT_REGISTER_API( "CannibalShouldEquip",					    &CannibalShouldEquip );
-    BT_REGISTER_API( "CannibalShouldSpawn",					    &CannibalShouldSpawn );
+	BT_REGISTER_API( "CannibalShouldShove",					    	&CannibalShouldShove );
+    	BT_REGISTER_API( "CannibalShouldEquip",					    	&CannibalShouldEquip );
+   	 BT_REGISTER_API( "CannibalShouldSpawn",					&CannibalShouldSpawn );
 
 	spawner::add_archetype_spawn_function( ARCHETYPE_CANNIBAL, 	&CannibalInit );
 
-    animationstatenetwork::registernotetrackhandlerfunction( "cannibal_melee", &CannibalMelee );
-    animationstatenetwork::registernotetrackhandlerfunction( "cannibal_shove", &CannibalShove );
-    animationstatenetwork::registernotetrackhandlerfunction( "death", &CannibalDeath );
+    	animationstatenetwork::registernotetrackhandlerfunction( "cannibal_melee", &CannibalMelee );
+    	animationstatenetwork::registernotetrackhandlerfunction( "cannibal_shove", &CannibalShove );
+    	animationstatenetwork::registernotetrackhandlerfunction( "death", &CannibalDeath );
 
 	level thread aat::register_immunity( ZM_AAT_BLAST_FURNACE_NAME, ARCHETYPE_CANNIBAL, true, true, true );
 	level thread aat::register_immunity( ZM_AAT_DEAD_WIRE_NAME, ARCHETYPE_CANNIBAL, true, true, true );
