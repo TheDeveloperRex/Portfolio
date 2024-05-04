@@ -1,0 +1,364 @@
+{
+    "questions": [
+        [
+            "An opening where a human consumes food. Mechanical and Chemical digestion starts here.",
+            [
+                "Colon",
+                "Stomach",
+                "Esophagus",
+                "Mouth"
+            ], 3
+        ],
+        [
+            "A muscular sac that can expand to nearly twice its original size, and hold up to 2L of food.",
+            [
+                "Stomach",
+                "Large Intestine",
+                "Small Intestine",
+                "Colon"
+            ], 0
+        ],
+        [
+            "What is the function of mucus in the stomach?",
+            [
+                "Mucus allows for food to break down",
+                "Mucus protects the stomach from its own acidic environment",
+                "Mucus collects bacteria and debris",
+                "Mucus releases enzymes to futher break down starches into sugars"
+            ], 1
+        ],
+        [
+            "A muscular tube that connects the mouth to the stomach.",
+            [
+                "Larynx",
+                "Pharynx",
+                "Esophagus",
+                "Trachea"
+            ], 2
+        ],
+        [
+            "What is the term given to a ball-like mixture of food and saliva that forms in the mouth?",
+            [
+                "Peristalsis",
+                "Bolus",
+                "Mucus",
+                "Epiglottis"
+            ], 1
+        ],
+        [
+            "What is the correct order of the alimentary canal?",
+            [
+                "Anus, Intestines, Stomach, Esophagus, Mouth",
+                "Esophagus, Mouth, Intestines, Stomach, Anus",
+                "Mouth, Stomach, Esophagus, Intestines, Anus",
+                "Mouth, Esophagus, Stomach, Intestines, Anus"
+            ], 3
+        ],
+        [
+            "Which secondary organ produces insulin, glucagon, and other digestive juices to further break down the food in the small intestines?",
+            [
+                "Liver",
+                "Mouth",
+                "Pancreas",
+                "Gallbladder"
+            ], 2
+        ],
+        [
+            "The teeth and tongue of the oral cavity break down food physically. This is an example of:",
+            [
+                "Peristalsis",
+                "Mechanical Digestion",
+                "Absorption",
+                "Chemical Digestion"
+            ], 1
+        ],
+        [
+            "Which 3 structures are designed to increase surface area for absorption?",
+            [
+                "Villi, Cilia, and Circular Folds",
+                "Valves, Sphincters, and Villi",
+                "Cilia, Circular Folds, and Microvilli",
+                "Microvilli, Villi, and Circular Folds"
+            ], 3
+        ],
+        [
+            "What is the process of wave-like muscle contractions that moves food through the digestive tract?",
+            [
+                "Pericardium",
+                "Peristalsis",
+                "Pepsin",
+                "Pericoronitis"
+            ], 1
+        ],
+        [
+            "Where are proteins primarily digested?",
+            [
+                "Small Intestine",
+                "Large Intestine",
+                "Stomach",
+                "Mouth"
+            ], 2
+        ],
+        [
+            "When acid from the stomach flows backwards (refluxes) into the esophagus",
+            [
+                "Peptic Ulcers",
+                "Indigestion",
+                "Heartburn",
+                "Constipation"
+            ], 2
+        ],
+        [
+            "What is the primary function of the large intestine?",
+            [
+                "Vitamin Conversion",
+                "Absorption of Fiber",
+                "Absorption of Nutrients",
+                "Absorption of Water"
+            ], 3
+        ],
+        [
+            "Inflammation of the pancreas is called:",
+            [
+                "Pancreatitis Disease",
+                "Gallstones",
+                "Cirrhosis",
+                "GERD"
+            ], 0
+        ],
+        [
+            "What is the material that is not digested or absorbed when digestion is finished called?",
+            [
+                "Chyme",
+                "Feces",
+                "Bolus",
+                "Urine"
+            ], 1
+        ],
+        [
+            "Which of the following is NOT a function of the digestive system?",
+            [
+                "Ingestion",
+                "Inspiration",
+                "Absorption",
+                "Digestion"
+            ], 1
+        ],
+        [
+            "What is the release of food from the stomach into the small intestine regulated by?",
+            [
+                "Pyloric Sphincter",
+                "Cardioesophageal Sphincter",
+                "Ileocecal Valve",
+                "Internal Anal Sphincter"
+            ], 0
+        ],
+        [
+            "What is the short tube that stores solid waste (feces) until it is eliminated from the body through the anus?",
+            [
+                "Rectum",
+                "Stomach",
+                "Liver",
+                "Esophagus"
+            ], 0
+        ],
+        [
+            "Which of the following is NOT an organ of the alimentary canal? (GI tract)",
+            [
+                "Pharynx",
+                "Mouth",
+                "Trachea",
+                "Esophagus"
+            ], 2
+        ],
+        [
+            "The primary function of the small intestine is:",
+            [
+                "Absorption of Nutrients",
+                "Vitamin Conversion",
+                "Absorption of Water",
+                "Waste Secretion"
+            ], 0
+        ],
+        [
+            "What is the order of the colon?",
+            [
+                "Ascending, Transverse, Descending, Sigmoid",
+                "Ascending, Sigmoid, Transverse, Descending",
+                "Descending, Transverse, Sigmoid, Ascending",
+                "Sigmoid, Descending, Transverse, Ascending"
+            ], 0
+        ],
+        [
+            "Deglutition is another name for:",
+            [
+                "Defecation",
+                "Digestion",
+                "Swallowing",
+                "Ingestion"
+            ], 2
+        ],
+        [
+            "Which of the following is the middle section of the small intestine?",
+            [
+                "Ileum",
+                "Doudenum",
+                "Ascending Colon",
+                "Jejunum"
+            ], 3
+        ],
+        [
+            "Chewing or mixing food with saliva is a process called:",
+            [
+                "Procrastination",
+                "Mastication",
+                "Masheration",
+                "Agglutination"
+            ], 1
+        ],
+        [
+            "Small structure attached to large intestine that serves no digestive function.",
+            [
+                "Haustra",
+                "Taenia Coli",
+                "Appendix",
+                "Cecum"
+            ], 2
+        ],
+        [
+            "Which of the following is NOT a subdivision of the large intestines?",
+            [
+                "Duodenum",
+                "Cecum",
+                "Appendix",
+                "Colon"
+            ], 0
+        ],
+        [
+            "Which of the following is NOT an accessory organ to the digestive system?",
+            [
+                "Bronchioles",
+                "Pancreas",
+                "Teeth",
+                "Salivary Glands"
+            ], 0
+        ],
+        [
+            "The process of taking food into the digestive tract via the mouth (digestive process).",
+            [
+                "Absorption",
+                "Ingestion",
+                "Indigestion",
+                "Constipation"
+            ], 1
+        ],
+        [
+            "What is located between the mouth and esophagus?",
+            [
+                "Bronchioles",
+                "Trachea",
+                "Larynx",
+                "Pharynx"
+            ], 3
+        ],
+        [
+            "A reflex action (no thought required) that occurs in the pharynx.",
+            [
+                "Swallowing",
+                "Ingestion",
+                "Coughing",
+                "Secretion"
+            ], 0
+        ],
+        [
+            "The material passed from stomach to small intestine; Pasty material of enzymes and HCl.",
+            [
+                "Bolus",
+                "Secretion",
+                "Chyme",
+                "Gastric Juices"
+            ], 2
+        ],
+        [
+            "What is the muscular valve between the esophagus and stomach?",
+            [
+                "Appendix",
+                "Cardiac Sphincter",
+                "Pyloric Sphincter",
+                "Gallbladder"
+            ], 1
+        ],
+        [
+            "Describe the 2 phases of deglutition:",
+            [
+                "Buccal: Voluntary; Food to bolus.  Pharyngeal-Esophageal: Involuntary; Moves bolus to stomach.",
+                "Buccal: Involuntary; Moves bolus to stomach.  Pharyngeal-Esophageal: Voluntary; Food to bolus.",
+                "Buccal: Voluntary; Elimination of indigestable substances.  Pharyngeal-Esophageal: Involuntary; Prepares food for breakdown.",
+                "Buccal: Involuntary; Moves bolus to stomach.  Pharyngeal-Esophageal: Voluntary; Prepares food for breakdown."
+            ], 0
+        ],
+        [
+            "What does pepsin do?",
+            [
+                "Forms glucagon from glucose",
+                "Breaks down glycogen into glucose",
+                "Forms glycogen from glucose",
+                "Breaks down proteins in the stomach"
+            ], 3
+        ],
+        [
+            "What is glycogensis?",
+            [
+                "Formation of glucagon from glucose",
+                "Formation of glycogen from glucose",
+                "Breakdown of glycogen into glucose",
+                "Breakdown of proteins in the stomach"
+            ], 1
+        ],
+        [
+            "What is glycogenolysis?",
+            [
+                "Formation of glycogen from glucose",
+                "Formation of glucagon from glucose",
+                "Breakdown of glycogen to glucose",
+                "Breakdown of proteins in the stomach"
+            ], 2
+        ],
+        [
+            "Which enzyme found in saliva begins the chemical breakdown of starch in the mouth?",
+            [
+                "Lipase",
+                "Nuclease",
+                "Amylase",
+                "Trypsin"
+            ], 2
+        ],
+        [
+            "Bile is produced by the __________ but stored in the __________.",
+            [
+                "Liver; Gallbladder",
+                "Liver; Pancreas",
+                "Gallbladder; Pancreas",
+                "Small Intestine; Pancreas"
+            ], 0
+        ],
+        [
+            "Ketoacidosis results from the incomplete breakdown of:",
+            [
+                "Cholesterol",
+                "Proteins",
+                "Glycogen",
+                "Fats"
+            ], 3
+        ],
+        [
+            "Which of the following is the moist innermost layer that lines the alimentary canal?",
+            [
+                "Mucosa",
+                "Serosa",
+                "Muscularis Externa",
+                "Fats"
+            ], 0
+        ]
+    ]
+}

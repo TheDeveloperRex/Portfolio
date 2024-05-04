@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+            "wins": 0,
+            "losses": 0,
+            "wlr": "0.00",
+            "correct": 0,
+            "incorrect": 0,
+            "accuracy": "0.00%"
+        },
+        [
+            "GAMES WON: ",
+            "GAMES LOST: ",
+            "W/L RATIO: ",
+            "CORRECT: ",
+            "INCORRECT: ",
+            "ACCURACY: "
+        ]
+    ]
+}
