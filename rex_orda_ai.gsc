@@ -189,13 +189,13 @@ function __init__()
 	for( i = 0; i < players.size; i++ )
 		players[ i ] clientfield::set_player_uimodel( "hudItems.CWBossHealthBar", 0 );
 
-	BT_REGISTER_API( "OrdaLocomotionBehaviorCondition",		&OrdaLocomotionBehaviorCondition );
+	BT_REGISTER_API( "OrdaLocomotionBehaviorCondition",			&OrdaLocomotionBehaviorCondition );
 	BT_REGISTER_API( "OrdaShouldSummonDog",					&OrdaShouldSummonDog );
 	BT_REGISTER_API( "OrdaTargetService",					&OrdaTargetService );
 	BT_REGISTER_API( "OrdaSpawnService",					&OrdaSpawnService );
 	BT_REGISTER_API( "OrdaShouldAttack",					&OrdaShouldAttack );
-	BT_REGISTER_API( "OrdaShouldRoar",						&OrdaShouldRoar );
-	BT_REGISTER_API( "OrdaShouldHeal",						&OrdaShouldHeal );
+	BT_REGISTER_API( "OrdaShouldRoar",					&OrdaShouldRoar );
+	BT_REGISTER_API( "OrdaShouldHeal",					&OrdaShouldHeal );
 
 	spawner::add_archetype_spawn_function( ARCHETYPE_ORDA, &OrdaInit );
 
