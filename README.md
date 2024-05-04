@@ -48,7 +48,6 @@ Used in a commissioned project as an enemy mini-boss that sneak attacks the play
 ### GEGENEES MINI-BOSS AI
 
 [![GEGENEES MINIBOSS AI](https://github.com/TheDeveloperRex/Portfolio/assets/101901578/25e86b0e-8424-44fb-ab40-5d5395a75823)](https://www.youtube.com/watch?v=VcrV2njIanc&ab_channel=Doughnuts)
-
 Used in a commissioned project as an enemy mini-boss that performs many different attacks against the target enemy. It can be encountered in games such as Call of Duty: Black Ops III and Call of Duty: Black Ops IV.
 * Utilized 3D space directional vectors, advanced trigonometry and calculus.
 * Utilized data structures to store data in sub-variables on the AI to access certain attributes across multiple functions without the unnecessary reassignments.
@@ -66,14 +65,14 @@ Used in a commissioned project as a final enemy boss that performs many differen
 * Utilized advanced trigonometry, calculus, 3D directional vector math to handle displacement, complex angular rotations and movement.
 * Utilized Treyarch AI systems to allow the AI to perform specialized events and actions within the Call of Duty Zombies mode.
 
-
 <hr />
 
-### COLD WAR HUD & GAMEPLAY SYSTEMS
+### COLD WAR HUD | PROGRESSION SYSTEMS | GAMEPLAY SYSTEMS
 
 [![COLD WAR HUD & GAMEPLAY SYSTEMS](https://github.com/TheDeveloperRex/Portfolio/assets/101901578/aee1c197-5352-4d27-823d-84fd961bc72e)](https://www.youtube.com/watch?v=sSCjfv1OhbA&t=153s&ab_channel=REX)
 Used in the Zombies mode of the main project as the main gameplay systems and user interface that give the game functionality, bringing a unique and interesting aspect to the players experience. The entirety of the HUD and gameplay systems equate to a total of 25k+ lines of code. It can be found in games such as Call of Duty: Black Ops Cold War.
 * This HUD and gameplay systems are programmed using the GSC/CSC and LUA programming languages.
+* This includes my leveling and/or progression system that saves player data to be stored across multiple projects.
 * Utilized unique methods of writing and storing data from the player, in the cloud to then retrieve it using LUA.
 * Utilized methods of optimization by limiting resources being threaded throughout the client-side and server-side pipeline based from structured events that occur within the game at any given period of time.
 * Utilized data structures to store data in sub-variables on the AI to access certain attributes across multiple functions without the unnecessary reassignments.
