@@ -35,7 +35,21 @@ Used in many areas of the main project as a mini boss that fires back at the tar
 
 <hr />
 
+### PREDATOR AI
+
+[![PREDATOR AI](https://github.com/TheDeveloperRex/Portfolio/assets/101901578/3419a1ff-d94d-4e32-a2e8-16d736d8b505)](https://www.youtube.com/watch?v=QsDYbWiaQ58&ab_channel=NoahJ456)
+
+Used in a commissioned project as an enemy boss that sneak attacks the player and performs many different attacks against the target enemy. It can be encountered in games such as Call of Duty: Black Ops III.
+* Utilized 3D space directional vectors, advanced trigonometry and calculus.
+* Utilized data structures to store data in sub-variables on the AI to access certain attributes across multiple functions without the unnecessary reassignments.
+* Utilized advanced trigonometry, calculus, 3D directional vector math to handle displacement, complex angular rotations and movement.
+* Utilized Treyarch AI systems to allow the AI to perform specialized events and actions within the Call of Duty Zombies mode.
+
+
+<hr />
+
 ### ICE GRENADE BOSS AI
+
 [![ICE GRENADE BOSS AI](https://github.com/TheDeveloperRex/Portfolio/assets/101901578/88d5c024-bee5-47db-8496-72513f78297a)](https://www.youtube.com/watch?v=P3NmgXKwjWk&t=10s&ab_channel=REX)
 Used in a commissioned project as a final enemy boss that performs many different attacks against the target enemy. It can be encountered in games such as Call of Duty: Black Ops III.
 * Utilized 3D space directional vectors, advanced trigonometry and calculus.
