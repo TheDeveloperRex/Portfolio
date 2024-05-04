@@ -14,7 +14,6 @@
 ### ORDA BOSS AI
 
 [![ORDA BOSS AI](https://github.com/TheDeveloperRex/Portfolio/assets/101901578/3a8e0400-815e-4fe1-b1c1-629d3a04e35a)](https://www.youtube.com/watch?v=EVeXBQBfBUQ&t=75s&ab_channel=REX)
-
 Used in many areas of the main project as a final enemy boss can be defeated to be rewarded greatly. It can be encountered in games such as Call of Duty: Black Ops Cold War.
 * This AI is programmed using the GSC/CSC and LUA programming languages.
 * Utilized 3D space directional vectors, advanced trigonometry and calculus.
@@ -24,10 +23,10 @@ Used in many areas of the main project as a final enemy boss can be defeated to 
 
 <hr />
 
-### STURMKRIEGER AI
+### STURMKRIEGER MINI-BOSS AI
 
 [![STURMKRIEGER AI](https://github.com/TheDeveloperRex/Portfolio/assets/101901578/b026ca2a-808c-4ae8-9a92-08e029718efd)](https://www.youtube.com/watch?v=b36_MzzxRuw&ab_channel=REX)
-Used in many areas of the main project as a mini boss that fires back at the target enemy. It can be encountered in games such as Call of Duty: Vanguard.
+Used in many areas of the main project as a mini-boss that fires back at the target enemy. It can be encountered in games such as Call of Duty: Vanguard.
 * Utilized 3D space directional vectors, advanced trigonometry and calculus.
 * Utilized data structures to store data in sub-variables on the AI to access certain attributes across multiple functions without the unnecessary reassignments.
 * Utilized advanced trigonometry, calculus, 3D directional vector math to handle displacement, complex angular rotations and movement.
@@ -35,16 +34,26 @@ Used in many areas of the main project as a mini boss that fires back at the tar
 
 <hr />
 
-### PREDATOR AI
+### PREDATOR MINI-BOSS AI
 
 [![PREDATOR AI](https://github.com/TheDeveloperRex/Portfolio/assets/101901578/3419a1ff-d94d-4e32-a2e8-16d736d8b505)](https://www.youtube.com/watch?v=QsDYbWiaQ58&ab_channel=NoahJ456)
-
-Used in a commissioned project as an enemy boss that sneak attacks the player and performs many different attacks against the target enemy. It can be encountered in games such as Call of Duty: Black Ops III.
+Used in a commissioned project as an enemy mini-boss that sneak attacks the player and performs many different attacks against the target enemy. It can be encountered in games such as Call of Duty: Black Ops III.
 * Utilized 3D space directional vectors, advanced trigonometry and calculus.
 * Utilized data structures to store data in sub-variables on the AI to access certain attributes across multiple functions without the unnecessary reassignments.
 * Utilized advanced trigonometry, calculus, 3D directional vector math to handle displacement, complex angular rotations and movement.
 * Utilized Treyarch AI systems to allow the AI to perform specialized events and actions within the Call of Duty Zombies mode.
 
+<hr />
+
+### GEGENEES MINI-BOSS AI
+
+[![GEGENEES MINIBOSS AI](https://github.com/TheDeveloperRex/Portfolio/assets/101901578/25e86b0e-8424-44fb-ab40-5d5395a75823)](https://www.youtube.com/watch?v=VcrV2njIanc&ab_channel=Doughnuts)
+
+Used in a commissioned project as an enemy mini-boss that performs many different attacks against the target enemy. It can be encountered in games such as Call of Duty: Black Ops III and Call of Duty: Black Ops IV.
+* Utilized 3D space directional vectors, advanced trigonometry and calculus.
+* Utilized data structures to store data in sub-variables on the AI to access certain attributes across multiple functions without the unnecessary reassignments.
+* Utilized advanced trigonometry, calculus, 3D directional vector math to handle displacement, complex angular rotations and movement.
+* Utilized Treyarch AI systems to allow the AI to perform specialized events and actions within the Call of Duty Zombies mode.
 
 <hr />
 
@@ -63,7 +72,6 @@ Used in a commissioned project as a final enemy boss that performs many differen
 ### COLD WAR HUD & GAMEPLAY SYSTEMS
 
 [![COLD WAR HUD & GAMEPLAY SYSTEMS](https://github.com/TheDeveloperRex/Portfolio/assets/101901578/aee1c197-5352-4d27-823d-84fd961bc72e)](https://www.youtube.com/watch?v=sSCjfv1OhbA&t=153s&ab_channel=REX)
-
 Used in the Zombies mode of the main project as the main gameplay systems and user interface that give the game functionality, bringing a unique and interesting aspect to the players experience. The entirety of the HUD and gameplay systems equate to a total of 25k+ lines of code. It can be found in games such as Call of Duty: Black Ops Cold War.
 * This HUD and gameplay systems are programmed using the GSC/CSC and LUA programming languages.
 * Utilized unique methods of writing and storing data from the player, in the cloud to then retrieve it using LUA.
@@ -75,7 +83,6 @@ Used in the Zombies mode of the main project as the main gameplay systems and us
 ### DIGESTION GAME
 
 [![DIGESTION GAME](https://github.com/TheDeveloperRex/Portfolio/assets/101901578/75b72564-9705-4bee-9acc-0560124f8fc5)](https://drive.google.com/file/d/104bZIyGLbMOQAVA3-UZZbHcbRcKTtkty/view?usp=sharing)
-
 This game was developed as the final project of my Anatomy course, achieving a final grade of 200%. In recognition of its exceptional quality and innovative approach, my instructor remarked that I exceeded expectations, demonstrating a level of dedication and creativity that stood out in the class. Upon completion, my instructor expressed admiration for the uniqueness of the project, citing it as an exemplary work that future students can aspire to.
 * This game application was programmed using Python and other interface libraries and completed within 4-5 days with 750+ lines of code.
 * Utilized Tkinter and Pillow libraries to create elements.
